@@ -66,6 +66,7 @@ h2.scroller {
 
 h2.scroller span.trigger2logo {
     color: dimgray;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar {
