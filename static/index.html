@@ -35,5 +35,20 @@
                 document.querySelector('img.logo').style.padding = '0px';
             });
         </script>
+
+        <script>
+            document.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                const textElement = document.querySelector('h2.scroller');
+                
+                if (scrollPosition < 250) {
+                    textElement.textContent = "Did you know that Apache Aurora was archived in 2021?";
+                } else if (scrollPosition < 500) {
+                    textElement.textContent = "The need. The hope. The bigger we seed.";
+                } else if (scrollPosition < 750) {
+                    textElement.textContent = "That is a good open-source tagline, right?";
+                }
+            });
+        </script>
     </body>
 </html>
