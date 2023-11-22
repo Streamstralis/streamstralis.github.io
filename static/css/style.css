@@ -28,6 +28,9 @@ div.header a img.logo {
 
 div.header div ul.menu {
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
     left: 20%;
     width: 60%;
 }
