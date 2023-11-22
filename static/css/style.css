@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html,
+body
+{
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+
+    div.header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 23px;
+        background-color: #1f1f32a5;
+        backdrop-filter: blur(15px);
+        width: 100%;
+        height: 20vh;
+        overflow-x: hidden;
+
+        a img.logo
+        {
+            width: 189.461538462px;
+            height: 74.4230769231px;
+        }
+
+        div ul.menu
+        {
+            position: absolute;
+            left: 20%;
+            width: 60%;
+
+            li
+            {
+                list-style: none;
+
+                a
+                {
+                    text-decoration: none;
+                    color: darkslategray;
+                    font-size: 32px;
+                    font-weight: 800;
+                    font-family: 'Nunito', sans-serif;
+                    transition: 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+                    :hover
+                    {
+                        padding: 12px;
+                        background-color: snow;
+                    }
+                }
+            }
+        }
+    }
+}
