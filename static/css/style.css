@@ -54,8 +54,8 @@ div.header div ul.menu li a:hover {
 
 h2.scroller {
     position: absolute;
-    text-align: center;
     top: 50%;
+    left: 10%;
     color: darkslateblue;
     font-size: 32px;
     font-weight: 800;
