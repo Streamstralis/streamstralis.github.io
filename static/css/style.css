@@ -52,6 +52,15 @@ div.header div ul.menu li a:hover {
     background-color: snow;
 }
 
+h2.scroller {
+    text-align: center;
+    color: darkslateblue;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.56s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
