@@ -21,6 +21,10 @@ div.header {
     overflow-x: hidden;
 }
 
+div.header::-webkit-scrollbar {
+    display: none;
+}
+
 div.header a img.logo {
     width: 189.461538462px;
     height: 74.4230769231px;
