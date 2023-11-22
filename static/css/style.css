@@ -55,11 +55,11 @@ div.header div ul.menu li a:hover {
 h2.scroller {
     position: absolute;
     top: 50%;
-    left: 10%;
     color: darkslateblue;
     font-size: 32px;
     font-weight: 800;
     font-family: 'Nunito', sans-serif;
+    width: 300px;
     transition: all 0.56s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
