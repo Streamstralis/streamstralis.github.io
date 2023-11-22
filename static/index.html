@@ -37,18 +37,35 @@
         </script>
 
         <script>
+            let lastKnownScrollPosition = 0;
+            let ticking = false;
+
             document.addEventListener('scroll', function() {
-                const scrollPosition = window.scrollY;
-                const textElement = document.querySelector('h2.scroller');
-                
-                if (scrollPosition < 500) {
-                    textElement.textContent = "Did you know that Apache Aurora was archived in 2021?";
-                } else if (scrollPosition < 750) {
-                    textElement.textContent = "The need. The hope. The bigger we seed.";
-                } else if (scrollPosition < 1000) {
-                    textElement.textContent = "That is a good open-source tagline, right?";
+                lastKnownScrollPosition = window.scrollY;
+
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        updateTextContent(lastKnownScrollPosition);
+                        ticking = false;
+                    });
+
+                    ticking = true;
                 }
             });
+
+            function updateTextContent(scrollPos) {
+                const textElement = document.querySelector('h2.scroller');
+
+                if (textElement) {
+                    if (scrollPos < 500) {
+                        textElement.textContent = "Did you know that Apache Aurora was archived in 2021?";
+                    } else if (scrollPos < 750) {
+                        textElement.textContent = "The need. The hope. The bigger we seed.";
+                    } else if (scrollPos < 1000) {
+                        textElement.textContent = "That is a good open-source tagline, right?";
+                    }
+                }
+            }
         </script>
     </body>
 </html>
