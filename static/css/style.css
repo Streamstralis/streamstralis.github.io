@@ -21,10 +21,6 @@ div.header {
     overflow-x: hidden;
 }
 
-div.header::-webkit-scrollbar {
-    display: none;
-}
-
 div.header a img.logo {
     width: 189.461538462px;
     height: 74.4230769231px;
@@ -54,4 +50,8 @@ div.header div ul.menu li a {
 div.header div ul.menu li a:hover {
     padding: 12px;
     background-color: snow;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
