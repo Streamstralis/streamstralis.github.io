@@ -29,6 +29,8 @@ div.header a img.logo {
 div.header div ul.menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
 }
 
