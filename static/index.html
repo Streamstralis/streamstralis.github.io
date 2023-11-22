@@ -24,6 +24,20 @@
             </div>
         </div>
 
-        <h2 class="scroller">Welcome to Streamstralis, the upstream continuation of Apache Aurora!</h2>
+        <h2 class="scroller">Welcome to <span class="trigger2logo">Streamstralis</span>, the upstream continuation of Apache Aurora!</h2>
+
+        <script>
+            document.querySelector('span.trigger2logo').addEventListener('mouseenter', () => {
+                document.querySelector('img.logo').style.padding = '15px';
+                document.querySelector('img.logo').style.backgroundColor = 'snow';
+                document.querySelector('img.logo').style.borderRadius = '75px';
+            });
+
+            document.querySelector('span.trigger2logo').addEventListener('mouseleave', () => {
+                document.querySelector('img.logo').style.padding = '0px';
+                document.querySelector('img.logo').style.backgroundColor = 'none';
+                document.querySelector('img.logo').style.borderRadius = 'none';
+            });
+        </script>
     </body>
 </html>
