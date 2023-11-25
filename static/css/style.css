@@ -69,36 +69,6 @@ h2.scroller span.trigger2logo {
     cursor: pointer;
 }
 
-div.socials {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    top: 65%;
-    left: 39%;
-    gap: 15px;
-    background-color: snow;
-    border-radius: 100px;
-    width: 25%;
-    height: 20vh;
-}
-
-div.socials ul.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-div.socials ul.menu li {
-    list-style: none;
-}
-
-div.socials ul.menu li a {
-    text-decoration: none;
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
