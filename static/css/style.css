@@ -76,10 +76,10 @@ div.socials {
     align-items: center;
     justify-content: center;
     top: 65%;
-    left: 85%;
+    left: 50%;
     gap: 15px;
     background-color: snow;
-    border-radius: 50px;
+    border-radius: 100px;
     width: 25%;
     height: 20vh;
 }
