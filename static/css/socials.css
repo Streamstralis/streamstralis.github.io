@@ -67,3 +67,7 @@ div.logos {
     width: 100%;
     height: 40vh;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
