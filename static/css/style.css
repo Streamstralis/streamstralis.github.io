@@ -9,6 +9,10 @@ html, body {
     background: linear-gradient(to right, #ff6e7f, #bfe9ff);
 }
 
+body.light {
+    background-color: snow;
+}
+
 div.header {
     display: flex;
     align-items: center;
@@ -67,6 +71,22 @@ h2.scroller {
 h2.scroller span.trigger2logo {
     color: dimgray;
     cursor: pointer;
+}
+
+h2.logoHeading {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+}
+
+div.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 50%;
+    height: 40vh;
 }
 
 ::-webkit-scrollbar {
