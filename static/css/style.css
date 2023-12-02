@@ -9,10 +9,6 @@ html, body {
     background: linear-gradient(to right, #ff6e7f, #bfe9ff);
 }
 
-body.light {
-    background-color: snow;
-}
-
 div.header {
     display: flex;
     align-items: center;
