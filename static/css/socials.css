@@ -1,5 +1,49 @@
 body { background-color: lightgray; }
 
+div.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    background-color: #1f1f32a5;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 20vh;
+    overflow-x: hidden;
+}
+
+div.header a img.logo {
+    width: 189.461538462px;
+    height: 74.4230769231px;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+div.header div ul.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+div.header div ul.menu li {
+    list-style: none;
+}
+
+div.header div ul.menu li a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    transition: 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+div.header div ul.menu li a:hover {
+    padding: 12px;
+    background-color: snow;
+}
+
 h2.logoHeading {
     position: absolute;
     top: 25%;
